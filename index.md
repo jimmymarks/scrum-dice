@@ -8,4 +8,4 @@ permalink: /
 
 ###Scrum Dice!
 
-If you're part of a development team, chances are you get called to small gatherings called "Scrums". The Scrum methodology is well-tested and, for the most part, well-liked. 
+The Scrum methodology of software development is very popular and, when applied correctly, makes great things happen. A key element of Scrum is the "__Daily Scrum__," a stand-up meeting 
