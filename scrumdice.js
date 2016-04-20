@@ -10,12 +10,11 @@ function rollDice(){
     die2.innerHTML = diceforms[d2];
     status.innerHTML = "You rolled "+diceTotal+".";
 
-    $('#highlightCountdown').removeClass('highlight').
-        countdown('option', {until: + 15*diceTotal});}
+    $('#highlightCountdown').removeClass('highlight').countdown('option', {until: + 15*diceTotal});
 
-$('#highlightCountdown').countdown({until: 0, onTick: highlightLast5});
+    $('#highlightCountdown').countdown({until: 0, onTick: highlightLast5});
 
-function highlightLast5(periods) {
+    function highlightLast5(periods) {
     if ($.countdown.periodsToSeconds(periods) === 5) {
         $(this).addClass('highlight');
         if($('#status').hasClass('announcement')){
@@ -24,4 +23,5 @@ function highlightLast5(periods) {
         }
         //get status div, replace text with "Wrap it up"
     }
+  }
 }
